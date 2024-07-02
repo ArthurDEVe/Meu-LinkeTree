@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LinkeTree - Arthur</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="cartao">
+        <div class="apresentacao">
+            <img src="./foto de perfil recortado.jpg" alt="Foto de Perfil">
+            <h1 class="nome">Arthur Henrique</h1>
+            <h2 class="local">São Paulo, Brasil</h2>
+            <h3 class="carreira">Desenvolvedor Front-End e Desenvolvedor de Games</h3>
+        </div>
+        <ul class="links">
+            <li class="instagram" data-url="https://www.instagram.com/arthur_henrique_dev/">INSTAGRAM</li>
+            <li class="x" data-url="https://x.com/arthur_arcade">X</li>
+            <li class="linkedin" data-url="https://www.linkedin.com/in/arthur-henrique-silva-de-oliveira/">LINKEDIN</li>
+            <li class="github" data-url="https://github.com/ArthurDEVe">GITHUB</li>
+            <li class="youtube" data-url="https://www.youtube.com/channel/UC7v6z1iKAOEHS-A9LB9C85w">YOUTUBE</li>
+            <li class="servidordiscord" data-url="https://discord.gg/EVtesn2w2V">SERVIDOR NO DISCORD</li>
+        </ul>
+    </div>
+    <script>
+        document.querySelectorAll('.instagram').forEach(function(instagram) {
+            instagram.addEventListener('click', function() {
+            window.location.href = instagram.getAttribute('data-url');
+          });
+        });
+        document.querySelectorAll('.x').forEach(function(x) {
+            x.addEventListener('click', function() {
+            window.location.href = x.getAttribute('data-url');
+          });
+        });
+        document.querySelectorAll('.linkedin').forEach(function(linkedin) {
+            linkedin.addEventListener('click', function() {
+            window.location.href = linkedin.getAttribute('data-url');
+          });
+        });
+        document.querySelectorAll('.github').forEach(function(github) {
+            github.addEventListener('click', function() {
+            window.location.href = github.getAttribute('data-url');
+          });
+        });
+        document.querySelectorAll('.youtube').forEach(function(youtube) {
+            youtube.addEventListener('click', function() {
+            window.location.href = youtube.getAttribute('data-url');
+          });
+        });
+        document.querySelectorAll('.servidordiscord').forEach(function(servidordiscord) {
+            servidordiscord.addEventListener('click', function() {
+            window.location.href = servidordiscord.getAttribute('data-url');
+          });
+        });
+      </script>
+</body>
+</html>
